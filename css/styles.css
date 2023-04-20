@@ -1,0 +1,72 @@
+#map {
+    height: 76vh;
+}
+.active {
+    color: rgb(168, 158, 254);
+    text-decoration: none;
+}
+.center {
+    align-items: center;
+}
+.no-decoration {
+    color: black;
+    text-decoration: none;
+}
+.no-decoration:hover {
+    color: rgb(118, 124, 189);
+}
+.imgbox {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    top: -8px;
+    left: -8px;
+    width: 100vw;
+}
+.img-placement {
+    position: relative;
+    top: -60px
+}
+.nav-center {
+    text-align: center;
+    margin: 10px;
+    color: black;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    color: grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.id {
+    height: 700px;
+}
+footer {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+}
+body {
+    background-color: azure;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

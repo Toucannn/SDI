@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="css/styles.css" />
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+ <title>Web GIS</title>
+ </head>
+ <body>
+ <div class="imgbox">
+    <img class="img-placement" src="img/mountain-pic.jpg">
+ </div>
+ <nav class="nav-center">
+    <a class="no-decoration" href="index.html">Basic Map</a> |
+    <a class="active" href="index2.html">Choropleth Map</a> |
+    <a class="no-decoration" href="index3.html">Heatmap</a>
+ </nav>
+ <div>
+    <h1>Web GIS Application</h1>
+    <button onClick="defaultMapSettings()">Default</button>
+    <div id="map">
+    </div>
+ </div>
+ <script>
+   document.addEventListener("DOMContentLoaded", function(event) { 
+       var scrollpos = localStorage.getItem('scrollpos');
+       if (scrollpos) window.scrollTo(0, scrollpos);
+   });
+
+   window.onbeforeunload = function(e) {
+       localStorage.setItem('scrollpos', window.scrollY);
+   };
+</script>
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/leaflet-choropleth@1.1.4/dist/choropleth.js"></script>
+ <script src="js/choroplethmap.js"></script>
+ <footer>
+    © Ats Remmelg, Tartu University, 2023
+ </footer>
+ </body>
+</html>
